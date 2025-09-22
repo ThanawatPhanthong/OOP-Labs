@@ -11,18 +11,18 @@ public class Account {
         if (balance > 0) {
             this.balance = balance;
         } else {
-            // do nothing
+            this.balance = 0;
         }
     }
 
     // Methods
     public void deposit(double depositAmount) {
-        if (depositAmount > 0 && ((balance - depositAmount) >= 0)) {
-            balance -= depositAmount;
+        if (depositAmount > 0) {
+            balance += depositAmount;
             System.out.println("Deposit : " + depositAmount + " $");
-            System.out.println("You're balance is : " + balance + " $ remaining");
+            System.out.println("You're balance is : " + balance + " $");
         } else {
-            System.out.println("You're balance isn't enough for deposit " + depositAmount + " $");
+            // do nothing
         }
     }
 

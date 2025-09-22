@@ -24,7 +24,9 @@ public class Book {
     }
 
     public void setPrice(double price) {
-        this.price = price;
+        if (price > 0) {
+            this.price = price;
+        }
     }
 
     public String getTitle() {
@@ -33,5 +35,9 @@ public class Book {
 
     public String getAuthor() {
         return this.author;
+    }
+
+    public double getPrice() {
+        return price;
     }
 }

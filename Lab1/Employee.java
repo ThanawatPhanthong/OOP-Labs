@@ -9,7 +9,7 @@ public class Employee {
     public Employee(String firstname, String lastname, double salary) {
         this.firstname = firstname;
         this.lastname = lastname;
-        this.salary = salary;
+        this.salary =salary;
     }
 
     public Employee(String firstname, String lastname) {
@@ -21,29 +21,29 @@ public class Employee {
         return firstname;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
-
     public String getLastname() {
         return lastname;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
     }
 
     public void getFullname() {
         System.out.println("Fullname : " + firstname + " " + lastname);
     }
 
-    public double updateSalary(double newSalary) {
+    public double setSalary(double newSalary) {
         if (newSalary > 0) {
             this.salary = newSalary;
         } else {
             // do nothing
         }
         return newSalary;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
     public double getSalary() {

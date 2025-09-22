@@ -7,7 +7,7 @@ public class EmployeeTest {
         employee1.setFirstname("Romeo");
         employee1.setLastname("Montague");
         employee1.getFullname();
-        employee1.updateSalary(-5500);
+        employee1.setSalary(-5500);
         System.out.println("Monthly salary : " + employee1.getSalary() + " $");
         System.out.println();
 

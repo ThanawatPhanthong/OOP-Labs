@@ -1,6 +1,5 @@
 public class AccountList {
-    @SuppressWarnings("FieldMayBeFinal")
-    private Account[] accounts;
+    private final Account[] accounts;
 
     public AccountList(int maxSize) {
         accounts = new Account[maxSize];

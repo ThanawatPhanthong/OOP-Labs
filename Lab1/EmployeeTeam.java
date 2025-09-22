@@ -22,9 +22,9 @@ class EmployeeTeam {
 
     public void updateSalaryOfEmployee(String firstname, double newSalary) {
         if (boss.getFirstname().equals(firstname)) {
-            boss.updateSalary(newSalary);
+            boss.setSalary(newSalary);
         } else if (employee.getFirstname().equals(firstname)) {
-            employee.updateSalary(newSalary);
+            employee.setSalary(newSalary);
         } else {
             System.out.println("No employee with first name : " + firstname);
         }
